@@ -1,24 +1,21 @@
 from random import *
 import variables
 
-def sum(a, b):
-    return a+b
-
-def resta(a, b):
-    return a-b
-
-def mult(a, b):
-    return a*b
-
-def div(a, b):
+def s(a, b):
+    res = a+b
+    return res
+def r(a, b):
+    res = a-b
+    return res
+def m(a, b):
+    res = a*b
+    return res
+def d(a, b):
     if(b != 0):
-        return a/b
+        res = a/b
     else:
-        return 1
-
-def fitness(output, x):
-    y = x**2+x+1
-    return (output-y)**2
+        res = 1
+    return res
 
 def generateProcedure():
     variables.curDepth += 1
