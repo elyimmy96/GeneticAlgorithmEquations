@@ -18,6 +18,13 @@ for j in range(0, variables.generations):
     for i in range(0, variables.populationSize):
         parent = getParent()
         #Aqui debemos generar un numero aleatorio para ver si copiar a siguiente generacion, mutar o mezclar dos padres
+
+        #Hay que revisar porcentajes, propongo:
+        # 65%   -->    Crossover
+        # 5%    -->    Mutación
+        # 30%   -->    Reproducción
+        #----------------------------
+        # 100%  -->    Total
         reproduce(parent) #Esta función copia a la siguiente generación
         print('Parent-->{}'.format(parent.fitness))
     variables.curGen += 1
