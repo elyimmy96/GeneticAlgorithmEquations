@@ -14,4 +14,10 @@ def init():
     global population
     population = []
     global populationSize
-    populationSize = 100
+    populationSize = 10
+    global curGen
+    curGen = 0
+    global generations
+    generations = 3
+    global newGen
+    newGen = []
