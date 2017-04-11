@@ -13,6 +13,7 @@ for i in range(0,variables.populationSize):
 print('Generation: {}'.format(variables.curGen))
 for i in range(0, variables.populationSize):
     print('{}\t{}'.format(i,variables.population[i].codigo))
+input("Press to continue")
 for j in range(0, variables.generations):
 
     for i in range(0, variables.populationSize):
@@ -21,11 +22,11 @@ for j in range(0, variables.generations):
 
         #Hay que revisar porcentajes, propongo:
         # 65%   -->    Crossover
-        # 5%    -->    Mutación
-        # 30%   -->    Reproducción
+        # 5%    -->    Mutacion
+        # 30%   -->    Reproduccion
         #----------------------------
         # 100%  -->    Total
-        reproduce(parent) #Esta función copia a la siguiente generación
+        reproduce(parent) #Esta funcion copia a la siguiente generacion
         print('Parent-->{}'.format(parent.fitness))
     variables.curGen += 1
     variables.population = variables.newGen
@@ -33,3 +34,4 @@ for j in range(0, variables.generations):
     print('Generation: {}'.format(variables.curGen))
     for i in range(0, variables.populationSize):
         print('{}\t{}'.format(i,variables.population[i].codigo))
+    input("Press to continue")
